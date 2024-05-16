@@ -12,7 +12,7 @@ static int ans=0;
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();}
         catch(Exception e)
         {System.err.println("Unable to load driver:"+ e);}
-        Connection conn = DriverManager.getConnection(                                      "jdbc:mysql://localhost:3305/users", "User1", "Mashuta.2023");
+        Connection conn = DriverManager.getConnection(                                      "jdbc:mysql://localhost:3305/users", "User1", "root");
         if (conn==null){System.out.println("Нет соединения с БД!");
             System.exit(0);}
         stmt = conn.createStatement();
@@ -29,7 +29,7 @@ static int ans=0;
         }
         public static void SaveUser(String name, String password, String email) throws SQLException {
             int id = 0;
-            Connection conn = DriverManager.getConnection(                                      "jdbc:mysql://localhost:3305/users", "User1", "Mashuta.2023");
+            Connection conn = DriverManager.getConnection(                                      "jdbc:mysql://localhost:3305/users", "User1", "root");
             if (conn==null){System.out.println("Нет соединения с БД!");
                 System.exit(0);}
             Statement stmt = conn.createStatement();
