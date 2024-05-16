@@ -10,7 +10,7 @@
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3305/users</property>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.username">User1</property>
-        <property name="hibernate.connection.password">Mashuta.2023</property>
+        <property name="hibernate.connection.password">root</property>
 
         <!-- DB schema will be updated if needed -->
         <property name="hbm2ddl.auto">update</property>
